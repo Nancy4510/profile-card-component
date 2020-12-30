@@ -1,4 +1,30 @@
-.attribution {
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    align-items: center;
+    background-color: hsl(185, 75%, 39%);
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    border: 1px solid black;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    height: 350px;
+    text-align: center;
+    width: 400px;
+}
+
+div .attribution {
+    align-items: center;
+    display: flex;
     font-size: 11px;
     text-align: center;
 }
