@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -6,37 +8,35 @@
 
 body {
      background-color: hsl(185, 75%, 39%);
-
      align-items: center;
      display: flex;
      height: 100vh;
      justify-content: center;
+     margin: auto;
 }
 
-/* .container {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-} */
-
-/* .card-container {
-    border-radius: 10px;
-    border: 5px solid black;
-    height: 300px;
-    width: 350px;
-    display: flex;
-    justify-content: center;
-} */
-
 .card {
-    border: 3px solid blue;
-    height: 310px;
+    background: white;
+    border-radius: 15px;
+    /* border: 3px solid blue; */
+    height: 400px;
     width: 350px;
 }
 
 .profile-img {
+    background: white;
     display: flex;
     justify-content: center;
+    margin-top: -52px;
+    /* padding-top: 30px; */
+    width: 348px;
+}
+
+.bg-pattern-card {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
 }
 
 img {
@@ -44,16 +44,56 @@ img {
 }
 
 .info {
-    border: 1px solid red;
-    display: flex;
-    justify-content: space-around;
-} 
-
-.stats {
-    border: 1px solid red;
     display: flex;
     justify-content: center;
-    align-items: center;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    margin-top: 20px;
+} 
+
+.name {
+    font-weight: 700;
+}
+
+.age {
+    color: hsl(0, 0%, 59%);
+    padding-left: 10px;
+}
+
+.city {
+    color: hsl(0, 0%, 59%);
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    padding-top: 5px;
+    text-align: center;
+}
+
+hr {
+    margin: auto;
+    text-align: center;
+    margin-top: 40px;
+    width: 100%;
+}
+
+.stats-p {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    padding-top: 20px;
+    margin: auto;
+    width: 60%;
+}
+
+.stats-info {
+    color: hsl(0, 0%, 59%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* text-align: center; */
+    /* align-items: flex-end; */
 }
 
 div .attribution {
