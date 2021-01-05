@@ -13,13 +13,29 @@ body {
     height: 100vh;
     justify-content: center;
     margin: auto;
+    /* overflow: hidden; */
+}
+
+.container {
+    position: relative;
 }
 
 .card {
     background: white;
+    box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.75);
     border-radius: 15px;
     height: 400px;
     width: 350px;
+}
+
+.bg-pattern-top {
+    /* border: 1px solid red; */
+    transform: rotate(105deg) translateX(-300px);
+}
+
+.bg-pattern-bottom {
+    /* border: 1px solid red; */
+    transform: rotate(20deg) translateY(550px);
 }
 
 .profile-img {
@@ -110,4 +126,11 @@ div .attribution {
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 1440px) {
+    body {
+        /* background-color: red; */
+        overflow: hidden;
+    }
 }
