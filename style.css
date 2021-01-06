@@ -13,7 +13,11 @@ body {
     height: 100vh;
     justify-content: center;
     margin: auto;
-    /* overflow: hidden; */
+    overflow: hidden;
+}
+
+.bg-pattern-top {
+    transform: rotate(105deg) translateX(-300px);
 }
 
 .container {
@@ -28,13 +32,7 @@ body {
     width: 350px;
 }
 
-.bg-pattern-top {
-    /* border: 1px solid red; */
-    transform: rotate(105deg) translateX(-300px);
-}
-
 .bg-pattern-bottom {
-    /* border: 1px solid red; */
     transform: rotate(20deg) translateY(550px);
 }
 
@@ -128,9 +126,3 @@ div .attribution {
     color: hsl(228, 45%, 44%);
 }
 
-@media only screen and (max-width: 1440px) {
-    body {
-        /* background-color: red; */
-        overflow: hidden;
-    }
-}
